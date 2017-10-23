@@ -6,6 +6,6 @@ init:
   - 7z x C:/ruby_trunk.7z -oC:/ruby_trunk
 
 test_script:
-  - set vers_cmd=call gem list
+  - set vers_cmd=call gem cleanup & call gem list
   - vers_test.cmd
   # main_run.cmd
