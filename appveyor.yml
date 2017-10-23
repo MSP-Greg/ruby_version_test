@@ -6,18 +6,6 @@ init:
   - 7z x C:/ruby_trunk.7z -oC:/ruby_trunk
 
 test_script:
-  - set rb_file=is_07968_socket_send_0010.rb
-  - echo   10 Characters Send
+  - set vers_cmd=call gem list
   - vers_test.cmd
-
-  - set rb_file=is_07968_socket_print_0010.rb
-  - echo   10 Characters Print
-  - vers_test.cmd
-
-  - set rb_file=is_07968_socket_send_2000.rb
-  - echo 2000 Characters Send
-  - vers_test.cmd
-
-  - set rb_file=is_07968_socket_print_2000.rb
-  - echo 2000 Characters Print
-  - vers_test.cmd
+  # main_run.cmd
